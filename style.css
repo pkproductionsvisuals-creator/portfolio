@@ -150,9 +150,8 @@ header p{
         display: flex;
         flex-direction: row;
 
-        margin-top: 6rem;
+        margin-top: 0rem;
         margin: 5rem;
-        gap: 6rem;
 
         color: white;
         margin-top: -4rem;
@@ -161,6 +160,7 @@ header p{
 
         position: relative;
         z-index: 1;
+        align-items: left;
     }
 
     .S2 button{
