@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import 'animate.css';
+
+
+
+cr{
+    color: #bc57e4;
+}
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(35, 34, 37);
+}
+
+/* LINHA */
+#line{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+}
+ /* H1 */
+ h1{
+    line-height: 1;
+ }
+
+/* HTML */
+html{
+    scroll-behavior: smooth;
+    width:100%;
+    overflow-x: hidden; /*Isso eliminou o Overflow X mas forçado, pois o conteudo do footer e form ficou cortado*/
+}
+
+/*ALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
+.ALL{
+    max-width: 1140px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(235, 235, 243, 0.8);
+
+    margin: 0 auto;
+}
+
+
+
+
+/* BODY ------------------------------------------------------------------------------------------------------------------*/
+body{
+    position: relative;
+    background-image: url();
+    background-size: cover;  /*Faz a imagem cobrir toda tela sem deforma-la mesmo que seja cortada*/
+    background-attachment: fixed; /*-COM ISSO PREENHEU A TELA TODA - fixa a imagem e nao sobre efeito com srool*/
+    background-position: center; /*Centraliza a imagem no body, tanto vertical com horizontal;*/
+
+    display: flex;/*Torna num modelo flexivel, permitindo organizal melhor usando flexbox*/
+    flex-direction: column; /*Elementos serao dispostos um abaixo do outro*/
+    overflow-x: hidden; /*Se algum elemento vazar, nao vaia aparecer*/
+    
+    max-width: 100%;
+
+    align-items: center; /*Alinhou o div principal no centro*/
+}
+
+/*HEADER -------------------------------------------------------------------------------------------------------------------*/
+
+header{
+    position: fixed;
+    z-index: 2; /*permitiu clicar nos elementos*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+
+   
+}
+
+header p{
+   
+}
+
+
+
+#logo{
+    margin-left: 0.5rem;
+    height: 1.5rem;
+    width: auto;
+}
+
+#menu{
+    display: flex; /*ISTO TIROU O ESPACAMMENTO PADRAO DOS ELEMENTOS <a>*/
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 0px;
+}
+
+#menu a{
+    color: rgb(42, 43, 48);
+    text-decoration: none;
+}
+
+/* 1.SECTION --------------------------------------------------------------------------------------------------------------------*/
+.S1{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: rgb(151, 15, 230);
+
+    margin-top: 6rem;
+    margin: 5rem;
+    gap: 10rem;
+
+    position: relative;
+    z-index: 1;
+
+    
+    
+}
+.S1 #txt{
+    margin-top: 2rem; /*Allinhou com o Vando*/
+}
+.S1 img{
+    width: 25rem;
+}
+
+/* TXT */
+.S1 h1{
+    margin-bottom: 1rem;
+}
+.S1 p{
+    color: rgb(35, 34, 37);
+}
+
+/* 2.SECTION ----------------------------------------------------------------------------------------------------------------------*/
+    .S2{
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 6rem;
+        margin: 5rem;
+        gap: 6rem;
+
+        color: white;
+        margin-top: -4rem;
+        margin-bottom: 3rem;/*Para se afastar do LINE*/
+        padding: 10px;
+
+        position: relative;
+        z-index: 1;
+    }
+
+    .S2 button{
+        background-color:rgb(151, 15, 230);
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 15px;
+        cursor: pointer;
+        width: 10rem;
+    }
+
+
+/* 3.SECTION ---------------------------------------------------------------------------------------------------------------------*/
+.S3{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 0px;/*Para juntar com i LINE*/
+    padding: 6rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.075);
+    text-align: center;/*Alinhou o titulo no centro*/
+
+    position: relative;
+    z-index: 1;
+
+    align-items: center; /*Alinhou os pacotes ao centro*/
+
+}
+
+.S3 h1{
+    font-size: smaller;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    color: rgba(35, 34, 37, 0.61);
+    font-style: italic;
+    text-transform: uppercase;
+  
+    
+}
+
+.S3 h2{
+    color: rgba(42, 43, 48, 0.685);
+}
+
+
+.S3 .packS{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+#pack{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center; /*Alinhou o texto no centro; e no centro da tela*/
+    align-items: center; /*Alinhou os itens no centro;*/
+
+}
+#pack img{
+    width: 6rem;
+    height: auto;
+}
+
+#pack p{
+    margin-top: -0.5rem;
+    color: rgb(35, 34, 37);
+    font-size: smaller;
+}
+
+/* 4.SECTION ----------------------------------------------------------------------------------------------------------------------*/
+.S4{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+
+    color: white;
+
+    position: relative;
+    z-index: 1;
+    background-color: rgba(235, 235, 243, 0.8);
+}
+.S4 #form-cont{
+    max-width: 300px; /*Tamanho que evita o scrool no telefone*/
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 30px;
+
+    border-radius: 10px; /*Update 14 Julho*/
+
+}
+.S4 #form-cont h2{
+    text-align: center;
+}
+
+.S4 #form-cont form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.S4 #form-cont form label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.S4 #form-cont form input{
+    padding: 10px;
+    font-size: 16px;
+    border: 0.1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+
+    border: 1px solid rgb(59, 52, 63);
+
+    width: 100%;
+}
+.S4 #form-cont form textarea{
+    color: white;
+    border: 1px solid rgb(59, 52, 63);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 16.7px; /*altera o tamanho da caixa*/
+
+    width: 100%;
+}
+
+.S4 #form-cont form button{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(151, 15, 230);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+
+    cursor: pointer;
+}
+.S4 #form-cont form button:hover{
+    background-color: #450053;
+}
+
+/* IMG 1 BACK */
+.pk{
+    position:absolute;
+    z-index: 0;
+    pointer-events: none;
+    max-width: 100%; /*Garantiu que nao sobrasse e ajustaje exantamente*/
+
+    top: 205rem;
+}
+
+
+/* 5. SECTION ----------------------------------------------------------------------------------*/
+.S5{
+    display: flex;
+    flex-direction: row;
+    color: rgb(151, 15, 230);
+
+    margin-top: 0.5rem;
+
+    position: relative;
+    z-index: 1;
+
+    max-width: 1140px;
+    background-color: rgba(235, 235, 243, 0.8);
+
+    gap: 6rem;
+    
+}
+.S5 #txt{
+    margin-top: 5rem; /*Allinhou com o Vando*/
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+}
+.S5 img{
+    max-width: 25rem;
+    margin: 4rem;
+}
+
+/* TXT */
+.S5 h1{
+    margin-bottom: 1rem;
+}
+.S5 p{
+    color: rgb(35, 34, 37);
+}
+
+
+
+/* 6. SECTION ----------------------------------------------------------------------------------*/
+
+
+#h12{
+    font-size: smaller;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: rgba(35, 34, 37, 0.61);
+    font-style: italic;
+    text-transform: uppercase;
+    
+}
+
+
+
+/* FOOTER ----------------------------------------------------------------------------------*/
+
+footer{
+    height: rem;
+    background-color: rgba(235, 235, 243, 0.8);
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+
+    max-width: 1110px;
+    width: 100%;
+
+    gap: 2.5rem;
+
+    text-align: left; /*Alinhou o texto ao centro*/
+
+    color: rgba(11, 11, 11, 0.273);
+}
+
+footer h3{
+    
+}
+footer p{
+  
+}
+
+
+footer h3{
+    font-size: 15px;
+}
+footer p{
+    font-size: 10px;
+}
+footer a{
+    text-decoration: none;
+    font-size:10px ;
+}
+footer .P1{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+
+
+
+.S6{
+    margin-top: 2rem;
+    max-width: 1140px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+
+.S6 iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9/16; /* mantém proporção vertical (story/reel) */
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.filter{
+    position: absolute;
+    background-color: #e20707;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.h11{
+    color: rgba(0, 0, 0, 0.651);
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+
+
+/* Responsivo para telefones (largura até 600px) */
+@media (max-width: 600px) {
+    .S1,
+    .S2,
+    .S6 {
+      flex-direction: column;
+      align-items: center; /* Centraliza os itens na vertical */
+      gap: 2rem; /* Reduz um pouco o espaço entre os elementos */
+      margin: 2rem 1rem; /* Ajusta as margens laterais */
+    }
+  
+    .S1 img,
+    .S2 img,
+    .S5 img,
+    .S6 img {
+      width: 100%; /* Imagens mais adaptadas ao ecrã */
+     ; /* Evita que fiquem demasiado grandes */
+     order: 2;
+    }
+  
+    .S1 #txt,
+    .S2 #txt,
+    .S5 #txt2,
+    .S6 #txt2 {
+      margin-top: 0; /* Remove margens superiores desnecessárias */
+      order: 1;
+     
+    }
+
+}
+
+
+
+
+
+.S7{
+    max-width: 1140px;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.ig-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* máximo 4 por linha */
+    width: 100%;
+    gap: 5px;
+
+}
+
+.ig-post{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5; /* proporção Instagram */
+    overflow: hidden;
+    
+}
+
+.ig-post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.S8{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw; /* ocupa toda a viewport */
+    padding: 2rem 0;
+    background-color: white;
+    
+}
